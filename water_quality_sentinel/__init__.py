@@ -3,7 +3,7 @@ Water Quality Sentinel - A monitoring system for water quality parameters.
 
 This package provides tools to monitor, analyze, and alert on water quality data
 from various sensors measuring pH, dissolved oxygen, turbidity, temperature,
-and conductivity.
+conductivity, nitrates, and phosphates.
 """
 
 __version__ = "1.0.0"

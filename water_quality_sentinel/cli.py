@@ -135,7 +135,7 @@ def cmd_status(monitor: WaterQualityMonitor) -> None:
 
 
 def cmd_alerts(args: argparse.Namespace, monitor: WaterQualityMonitor) -> None:
-    alerts = monitor.get_active_alerts() if not args.show_all else monitor._alert_store.get_all()
+    alerts = monitor.get_active_alerts() if not args.show_all else monitor.get_all_alerts()
     if not alerts:
         print("No active alerts.")
         return

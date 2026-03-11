@@ -96,6 +96,10 @@ class WaterQualityMonitor:
 
         return alerts
 
+    def get_all_alerts(self) -> List[Alert]:
+        """Return all stored alerts, including acknowledged ones."""
+        return self._alert_store.get_all()
+
     def get_active_alerts(self) -> List[Alert]:
         """Return all currently active (unacknowledged) alerts."""
         return self._alert_store.get_active()
